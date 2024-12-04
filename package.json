@@ -1,0 +1,11 @@
+{
+  "name": "boilex-mvc",
+  "version": "1.0.0",
+  "main": "cli.mjs",
+  "bin": {
+    "boilex-mvc": "./cli.mjs"
+  },
+  "author": "Varun-Kolanu",
+  "license": "ISC",
+  "description": "A CLI tool for spinning up Nodejs projects with express following MVC folder structure."
+}
