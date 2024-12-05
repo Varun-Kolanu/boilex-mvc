@@ -7,5 +7,8 @@
   },
   "author": "Varun-Kolanu",
   "license": "ISC",
-  "description": "A CLI tool for spinning up Nodejs projects with express following MVC folder structure."
+  "description": "A CLI tool for spinning up Nodejs projects with express following MVC folder structure.",
+  "dependencies": {
+    "inquirer": "^12.1.0"
+  }
 }

@@ -4,8 +4,10 @@ export const defaultPackageJson = {
     "name": "my-app",
     "version": "1.0.0",
     "main": "server.js",
+    "type": "module",
     "scripts": {
-        "start": "node server.js"
+        "start": "node server.js",
+        "dev": "nodemon server.js"
     },
     "keywords": [],
     "author": "",
