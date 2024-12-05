@@ -10,7 +10,6 @@ export function createPackageJson(answers, yes) {
         packageJson = {
             ...defaultPackageJson,
             ...answers,
-            keywords: answers.keywords[0] ? answers.keywords : []
         };
     }
 

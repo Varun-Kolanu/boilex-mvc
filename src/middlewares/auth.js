@@ -10,6 +10,8 @@ const isAuthenticated = async (req, _, next) => {
     }
 
     token = token.split(" ")[1];
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
     req.user = await User.findById(decoded._id);
     next();
 }

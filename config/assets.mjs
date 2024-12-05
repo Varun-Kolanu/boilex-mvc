@@ -15,7 +15,7 @@ export const defaultPackageJson = {
     "description": ""
 }
 
-export const questions = [
+export const packageQuestions = [
     {
         type: 'input',
         name: 'name',
@@ -26,22 +26,14 @@ export const questions = [
         type: 'input',
         name: 'description',
         message: 'Description:'
-    },
-    {
-        type: 'input',
-        name: 'author',
-        message: 'Author:'
-    },
-    {
-        type: 'input',
-        name: 'license',
-        message: 'License:',
-        default: defaultPackageJson.license
-    },
-    {
-        type: 'input',
-        name: 'keywords',
-        message: 'Keywords (comma-separated):',
-        filter: (input) => input.split(',').map(keyword => keyword.trim())
     }
 ];
+
+export const confirmQuestion = [
+    {
+        type: 'confirm',
+        name: 'confirm',
+        message: 'Do you want to spin up the project using default configuration?',
+        default: true
+    }
+]
